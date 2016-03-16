@@ -1,0 +1,6 @@
+I had some dificulties correcting dependencies with the script
+So, i added on single bash line on installer script installing the dependecies were missing.
+They are: i2p, tor and secure delete
+(apt-get install i2p tor secure-delete #Correction for new dependencies, ie, secure-delete)
+It fixed my problem
+Tested on Kali Linux 2.0 amd64 architecture
