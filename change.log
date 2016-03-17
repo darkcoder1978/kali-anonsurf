@@ -3,4 +3,15 @@ So, i added on single bash line on installer script installing the dependecies w
 They are: i2p, tor and secure delete
 (apt-get install i2p tor secure-delete #Correction for new dependencies, ie, secure-delete)
 It fixed my problem
+Since im normaly connected to an IPv6 capable network
+i noted sometimes i was IPv6 leaking.
+I added the script ipv6_stop.sh.
+It disable IPv6 traffic.
+When you turn AnonSurf off if you want to enable IPv6 again, just
+edit file /etc/sysctl.conf, for  example with gedit (as root)
+gedit etc/sysctl.conf
+you erase the lines added by the script,save document and then
+source /etc/sysctl.conf
+when you reboot the machine or network manager, you will be IPv6 capable again
 Tested on Kali Linux 2.0 amd64 architecture
+Tested on Debian amd64 architecture
